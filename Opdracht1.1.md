@@ -4,10 +4,10 @@ Het Web laten 'breken' door features van het platform bewust uit te zetten. Imag
 ## Kleurenblindheid
 ### Mogelijke problemenn oplossingen
 #### Zien van bepaalde foutmeldingen die in kleur zijn aangegeven
-Denk bijvoorbeeld aan foutmeldingen in formulieren, een input field die een rode border krijgt kan moeilijk te zien zijn voor iemand die kleurenblind is.
+Denk bijvoorbeeld aan foutmeldingen in formulieren, een input field die een rode border krijgt kan moeilijk te zien zijn voor iemand die kleurenblind is.<br>
 ![Image of textfield](./course/textfield_1.png)
 
-Een mogelijke oplossing hiervoor is gebruik maken van plain tekst onder het tekstvak of een popover om foutmeldingen duidelijk te weergeven.
+Een mogelijke oplossing hiervoor is gebruik maken van plain tekst onder het tekstvak of een popover om foutmeldingen duidelijk te weergeven.<br>
 ![Image of textfield](./course/textfield_2.png)
 
 #### Websites met te veel verschillende kleuren kunnen verwarrend zijn
