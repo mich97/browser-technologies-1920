@@ -1,33 +1,28 @@
-# Browser Technologies
-## Opdracht 1.1 - Breek het web
+# Opdracht 1.1 - Breek het web
 Het Web laten 'breken' door features van het platform bewust uit te zetten. Images, custom fonts, JavaScript, kleur, breedband internet.
 
-### Doel van deze opdracht
-Het doel van deze opdracht is om erachter komen dat je misschien aannames hebt die niet kloppen, en om je in te laten leven in de eindgebruiker.
+## Kleurenblindheid
+### Mogelijke problemenn oplossingen
+#### Zien van bepaalde foutmeldingen die in kleur zijn aangegeven
+Denk bijvoorbeeld aan foutmeldingen in formulieren, een input field die een rode border krijgt kan moeilijk te zien zijn voor iemand die kleurenblind is.
+![Image of textfield](./course/textfield_1.png)
 
+Een mogelijke oplossing hiervoor is gebruik maken van plain tekst onder het tekstvak of een popover om foutmeldingen duidelijk te weergeven.
+![Image of textfield](./course/textfield_2.png)
 
-### Uitleg
-Onderzoek minimaal twee features. Dat betekent uitvogelen wat het voor impact heeft op de sites die je kent en normaal gebruikt. Zoek uit hoe je de feature kan testen. Kies sites in je directe omgeving: van je werkgever, lokale vereniging, de cafetaria om de hoek, en/of eerdere projecten die je zelf gedaan hebt. Onderzoek de problemen, cijfers en/of meningen. Bedenk ook hoe je de problemen zou kunnen oplossen.
+#### Websites met te veel verschillende kleuren kunnen verwarrend zijn
+Er zijn bepaalde kleurcombinaties voor mensen met kleurenblindheid die een mogelijk probleem kunnen vormen.
+- Groen/rood
+- Groen/bruin
+- Blauw/paars
+- Groen/blauw
+- Licht groen/geel
+- Blauw/grijs
+- Groen/grijs
+- Groen/zwart
 
-1. Afbeeldingen uitzetten
-2. Custom fonts uitzetten
-3. Kleur uitzetten & kleurenblindheid instellen
-4. Muis/Trackpad werkt niet
-5. Breedband internet uitzetten
-6. Javascript (volledig)
-7. Cookies niet accepteren
-8. localStorage doet het niet
+Het is aangeraden om een simpel kleurenpalet te gebruiken voor een ‘minimal’ design en verwarring te voorkomen.
 
-Optioneel mag je ook één van deze features onderzoeken:
-- a. Content blockers
-- b. Ad blockers (privacy)
-- c. Browser detect
-
-
-### Criteria
-Je krijgt 2 features van de 8
-- Zoek uit welke problemen ze kunnen veroorzaken (verzamel cijfers, meningen, ervaringen)
-- Zoek uit hoe je dit kunt testen (hoe kun je een feature ‘uitzetten’)
-- Vind een aantal sites waar dit ook problemen oplevert (uit je directe omgeving)
-- Beschrijf hoe je dit kan fiksen
-- Neem je bevindingen en voorbeelden mee naar de les, dan gaan we de resultaten bespreken in groepjes 
+#### Inzien van grafieken/statistieken die opgedeeld zijn in kleuren
+Veel grafieken gebruiken een verschil in kleuren om categorieën op te delen, onderstaande afbeelding is een voorbeeld van een ‘slechte’ grafiek. Dit kan opgelost worden door patronen te gebruiken.
+![Image of graph](./course/graphs.png)
