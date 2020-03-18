@@ -16,3 +16,6 @@ De applicatie heeft een aantal manieren om de usability te verbeteren.
 - Progress bar met aantal vragen per pagina
 - Knop per pagina om naar de volgende/vorige vraag te navigeren
 - Terug knop op de 'finish' pagina
+
+## Pleasurable
+...
