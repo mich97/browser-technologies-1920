@@ -1,4 +1,4 @@
-# Opdracht 2 - 
+# Opdracht 2 - Progressive Enhanced Browser Technologie
 In deze opdracht is het de bedoeling dat we met behulp van Prograssive Enhancement en Feature Detection en online interactieve toepassing maken.
 
 ## Use Case
