@@ -1,0 +1,22 @@
+{
+  "name": "browser-technologies-1920",
+  "version": "1.0.0",
+  "description": "//Robuuste, toegankelijke websites ontwerpen en maken …",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mich97/browser-technologies-1920.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mich97/browser-technologies-1920/issues"
+  },
+  "homepage": "https://github.com/mich97/browser-technologies-1920#readme"
+}
