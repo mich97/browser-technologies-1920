@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+body {
+    font-family: 'Ubuntu';
+    background-color: #1D2228;
+    color: #E1E2E2;
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    max-height: 100vh;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+svg {
+    max-width: 7em;
+    height: auto;
+    fill: #FB8122;
+}
+
+a {
+    text-decoration: none;
+    color: #E1E2E2;
+    background-color: #FB8122;
+}
+
+a, input {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+section[class="continue-container"],
+section[class="start-container"] {
+    max-width: 400px;
+    margin: auto;
+}
