@@ -31,7 +31,8 @@ function renderHome(req, res) {
 function renderSurvey(req, res) {
     const key = req.params.key
     res.render('survey', {
-        key
+        key,
+        query: req.query
     })
 }
 
