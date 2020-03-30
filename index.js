@@ -1,5 +1,4 @@
 const express = require('express')
-const rand = require("random-key")
 
 const config = {
     port: 3000
@@ -16,23 +15,24 @@ function routes() {
     const router = express.Router()
     router
         .get('/', renderHome)
-        .get('/survey/:key', renderSurvey)
+        .get('/survey', renderSurvey)
+        .get('/survey/continue', renderContinue)
     return router
 }
 
 function renderHome(req, res) {
-    const key = rand.generateDigits(6)
-    console.log(key)
-    res.render('home', {
-        key
-    })
+    res.render('home')
 }
 
 function renderSurvey(req, res) {
-    const key = req.params.key
     res.render('survey', {
-        key,
         query: req.query
+    })
+}
+
+function renderContinue(req, res) {
+    res.render('continue', {
+        url: req._parsedOriginalUrl.search
     })
 }
 

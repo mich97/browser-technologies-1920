@@ -22,8 +22,7 @@
   "homepage": "https://github.com/mich97/browser-technologies-1920#readme",
   "dependencies": {
     "ejs": "^3.0.1",
-    "express": "^4.17.1",
-    "random-key": "^0.3.2"
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

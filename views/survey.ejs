@@ -1,46 +1,50 @@
 <%- include('partials/head') %>
 
-<h1>Survey</h1>
-<p><%= key %></p>
+<header>
+    <h1>Survey</h1>
+</header>
 
-<form>
-    <label>
-        First name:
-        <input type="text" name="firstname"
-            <% if(query.firstname) { %>
-               value="<%= query.firstname%>"
-            <% } %>
-        />
-    </label>
-    <label>
-        Last name:
-        <input type="text" name="lastname"
-            <% if(query.lastname) { %>
-               value="<%= query.lastname%>"
-            <% } %>
-        />
-    </label>
-    <label>
-        Gender
-        Male
-        <input type="radio" name="gender" value="male"
-            <% if(query.gender == "male") { %>
-                checked
-            <% } %>
-        >
-        Female
-        <input type="radio" name="gender" value="female"
-            <% if(query.gender == "female") { %>
-               checked
-            <% } %>
-        >
-        Other
-        <input type="radio" name="gender" value="other"
-            <% if(query.gender == "female") { %>
-               checked
-            <% } %>>
-    </label>
-    <button type="submit">Save</button>
-</form>
+<main>
+    <form action="/survey/continue" id="contact_form" class="photos">
+        <input type="text" placeholder="First name" name="firstname"
+        <% if(query.firstname) { %>
+               value="<%= query.firstname %>"
+                <% } %> >
+
+        <input type="text" placeholder="Last name" name="lastname"
+        <% if(query.lastname) { %>
+               value="<%= query.lastname %>"
+                <% } %> >
+
+        <input type="text" placeholder="What do you study?" name="education"
+        <% if(query.education) { %>
+               value="<%= query.education %>"
+                <% } %> >
+
+        <select name="subject">
+            <option disabled hidden selected>What's your preference?</option>
+            <option id="design">Design</option>
+            <option id="technical">Technical coding</option>
+            <option id="both">Both!</option>
+        </select>
+
+        <input type="submit" value="Continue later">
+    </form>
+
+    <section class="photos">
+        <form action="">
+            <section class="block active">1</section>
+            <section class="block">2</section>
+            <section class="block">3</section>
+        </form>
+    </section>
+</main>
+<footer>
+    <section class="buttons">
+        <a class="prev" href="#"><</a>
+        <a class="next" href="#">></a>
+    </section>
+</footer>
+
 
 <%- include('partials/footer') %>

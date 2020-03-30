@@ -1,49 +1,110 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-body {
-    font-family: 'Ubuntu';
-    background-color: #1D2228;
-    color: #E1E2E2;
-    margin: 0;
+html {
+    font-family: monospace, Arial, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background-color: #e0e0e0;
 }
 
-main {
-    max-width: 800px;
+body {
+    background: #fff;
+    max-width: 40em;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.05);
+    max-height: 100vh;
+    min-height: 100vh;
 }
 
 header {
-    text-align: center;
+    overflow: auto;
+    background-color: #333;
+    color: #eee;
+    padding: 1em;
+}
+header h1 {
+    text-transform: uppercase;
+    border-bottom: 3px solid #eee;
+    display: inline;
 }
 
-h1 {
-    font-size: 4em;
-    margin: 0;
+main, footer {
+    padding: 1em;
 }
 
-svg {
-    max-width: 7em;
-    height: auto;
-    fill: #FB8122;
+input[type='text'], [type='email'], input[type="number"], select, textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #474544;
+    color: #474544;
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s;
 }
 
+input[type='text']:focus, [type='email']:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+select {
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type="submit"] {
+    background: none;
+    border: solid 2px #474544;
+    color: #474544;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #474544;
+    color: #F2F3EB;
+}
+
+/* SLIDER START */
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: auto;
+}
 a {
     text-decoration: none;
-    color: #E1E2E2;
-    background-color: #FB8122;
+    color: black;
 }
-
-a, input[type="text"] {
-    display: block;
+ a:hover {
+    color: #4d4d4d;
+}
+.photos {
+    position: relative;
+}
+.block {
     width: 100%;
-    padding: 1em;
-    margin-bottom: 1em;
-    border-radius: 5px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
 }
-
-section[class="continue-container"],
-section[class="start-container"] {
-    max-width: 400px;
-    margin: auto;
+.block.active {
+    opacity: 1;
 }
+/* SLIDER END */
