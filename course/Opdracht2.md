@@ -12,10 +12,10 @@ De applicatie zal bestaan uit html/css en server side javascript, zodat het zond
 
 ## Usable
 De applicatie heeft een aantal manieren om de usability te verbeteren.
-- Hele pagina per vraag voor duidelijkheid
+- Vragen indelen op verschillende views
 - Progress bar met aantal vragen per pagina
 - Knop per pagina om naar de volgende/vorige vraag te navigeren
 - Terug knop op de 'finish' pagina
 
 ## Pleasurable
-...
+In de pleasurable laag zitten alle 'extras' die de gebruikservaring van de applicatie fijner maken. Dit zijn functionaliteiten die niet persé nodig zijn maar wel heel handig zijn om te hebben.

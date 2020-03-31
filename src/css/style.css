@@ -116,6 +116,10 @@ main {
     padding: 1em;
 }
 
+main p {
+    max-width: 100%;
+}
+
 a {
     background-color: #5200ee;
     color: #ffffff;
