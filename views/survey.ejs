@@ -34,28 +34,28 @@
     </fieldset>
     <fieldset>
         <h1>What are you familiar with?</h1>
-        <input type="checkbox" id="html" value="html" name="lang"
-        <% if(query.lang.includes('html')) { %>
+        <input type="checkbox" id="html" value="html" name="html"
+        <% if(query.html == "html") { %>
                checked
                 <% } %>
         >
         <label for="html">HTML</label>
-        <input type="checkbox" id="css" value="css" name="lang"
-        <% if(query.lang.includes('css')) { %>
+        <input type="checkbox" id="css" value="css" name="css"
+        <% if(query.css == "css") { %>
                checked
                 <% } %>
         >
         <label for="css">CSS</label>
-        <input type="checkbox" id="js" value="js" name="lang"
-        <% if(query.lang.includes('js')) { %>
+        <input type="checkbox" id="js" value="js" name="js"
+        <% if(query.js == "js") { %>
                checked
                 <% } %>
         >
         <label for="js">Javascript</label>
-        <input type="checkbox" id="php" value="php" name="lang"
-        <% if(query.lang.includes('php')) { %>
-           checked
-        <% } %>
+        <input type="checkbox" id="php" value="php" name="php"
+        <% if(query.php == "php") { %>
+               checked
+                <% } %>
         >
         <label for="php">PHP</label>
     </fieldset>
@@ -67,22 +67,26 @@
             <% if(query.framework == "Angular") { %>
                     selected
                     <% } %>
-            >Angular</option>
+            >Angular
+            </option>
             <option value="React"
             <% if(query.framework == "React") { %>
                     selected
                     <% } %>
-            >React</option>
+            >React
+            </option>
             <option value="Vue"
             <% if(query.framework == "Vue") { %>
                     selected
                     <% } %>
-            >Vue</option>
+            >Vue
+            </option>
             <option value="none"
             <% if(query.framework == "none") { %>
                     selected
                     <% } %>
-            >None of the above!</option>
+            >None of the above!
+            </option>
         </select>
     </fieldset>
 
