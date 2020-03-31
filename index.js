@@ -1,8 +1,5 @@
 const express = require('express')
-
-const config = {
-    port: 3000
-}
+const port = process.env.PORT || 3000
 
 const app = express()
 app
@@ -16,7 +13,8 @@ function routes() {
     router
         .get('/', renderHome)
         .get('/survey', renderSurvey)
-        .get('/survey/continue', renderContinue)
+        .get('/save', renderSave)
+        .get('/finish', renderFinish)
     return router
 }
 
@@ -30,12 +28,18 @@ function renderSurvey(req, res) {
     })
 }
 
-function renderContinue(req, res) {
-    res.render('continue', {
-        url: req._parsedOriginalUrl.search
+function renderSave(req, res) {
+    const fullUrl = `${req.protocol}://${req.get("host")}/survey${req._parsedOriginalUrl.search}`
+    res.render('save', {
+        url: fullUrl
     })
 }
 
-app.listen(config.port, function () {
-    console.log(`Application started on port: ${config.port}`)
+function renderFinish(req, res) {
+    console.log(req.query)
+    res.render('finish')
+}
+
+app.listen(port, function () {
+    console.log(`Application started on port: ${port}`)
 })

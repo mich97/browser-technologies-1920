@@ -1,50 +1,103 @@
 <%- include('partials/head') %>
 
-<header>
-    <h1>Survey</h1>
-</header>
-
-<main>
-    <form action="/survey/continue" id="contact_form" class="photos">
-        <input type="text" placeholder="First name" name="firstname"
-        <% if(query.firstname) { %>
-               value="<%= query.firstname %>"
-                <% } %> >
-
-        <input type="text" placeholder="Last name" name="lastname"
-        <% if(query.lastname) { %>
-               value="<%= query.lastname %>"
-                <% } %> >
-
-        <input type="text" placeholder="What do you study?" name="education"
-        <% if(query.education) { %>
-               value="<%= query.education %>"
-                <% } %> >
-
-        <select name="subject">
-            <option disabled hidden selected>What's your preference?</option>
-            <option id="design">Design</option>
-            <option id="technical">Technical coding</option>
-            <option id="both">Both!</option>
+<form id="regForm">
+    <fieldset>
+        <h1>Who are you?</h1>
+        <input type="text" placeholder="First name ..." name="fname"
+        <% if(query.fname) { %>
+               value="<%= query.fname %>"
+                <% } %>
+        >
+        <input type="text" placeholder="Last name ..." name="lname"
+        <% if(query.lname) { %>
+               value="<%= query.lname %>"
+                <% } %>
+        >
+        <input type="number" placeholder="Age ..." name="age"
+        <% if(query.age) { %>
+               value="<%= query.age %>"
+                <% } %>
+        >
+    </fieldset>
+    <fieldset>
+        <h1>Where/what do you study?</h1>
+        <input type="text" placeholder="School ..." name="school"
+        <% if(query.school) { %>
+               value="<%= query.school %>"
+                <% } %>
+        >
+        <input type="text" placeholder="Course ..." name="course"
+        <% if(query.course) { %>
+               value="<%= query.course %>"
+                <% } %>
+        >
+    </fieldset>
+    <fieldset>
+        <h1>What are you familiar with?</h1>
+        <input type="checkbox" id="html" value="html" name="lang"
+        <% if(query.lang == "html") { %>
+               checked
+                <% } %>
+        >
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" value="css" name="lang"
+        <% if(query.lang == "css") { %>
+               checked
+                <% } %>
+        >
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js" value="js" name="lang"
+        <% if(query.lang == "js") { %>
+               checked
+                <% } %>
+        >
+        <label for="js">Javascript</label>
+        <input type="checkbox" id="php" value="php" name="lang">
+        <label for="php">PHP</label>
+    </fieldset>
+    <fieldset>
+        <h1>Pick your favourite!</h1>
+        <select name="framework" id="framework">
+            <option value="placeholder" disabled hidden selected>Pick one</option>
+            <option value="angular"
+            <% if(query.framework == "angular") { %>
+                    selected
+                    <% } %>
+            >Angular</option>
+            <option value="react"
+            <% if(query.framework == "react") { %>
+                    selected
+                    <% } %>
+            >React</option>
+            <option value="vue"
+            <% if(query.framework == "vue") { %>
+                    selected
+                    <% } %>
+            >Vue</option>
+            <option value="none"
+            <% if(query.framework == "none") { %>
+                    selected
+                    <% } %>
+            >None of the above!</option>
         </select>
+    </fieldset>
 
-        <input type="submit" value="Continue later">
-    </form>
+    <section>
+        <section>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </section>
+        <section>
+            <button type="submit" formaction="/save">Save</button>
+            <button type="button" id="prevBtn">Previous</button>
+            <button type="button" id="nextBtn">Next</button>
+            <button type="submit" id="subBtn" formaction="/finish">Submit</button>
+        </section>
 
-    <section class="photos">
-        <form action="">
-            <section class="block active">1</section>
-            <section class="block">2</section>
-            <section class="block">3</section>
-        </form>
     </section>
-</main>
-<footer>
-    <section class="buttons">
-        <a class="prev" href="#"><</a>
-        <a class="next" href="#">></a>
-    </section>
-</footer>
+</form>
 
-
+<script src="/js/script.js"></script>
 <%- include('partials/footer') %>

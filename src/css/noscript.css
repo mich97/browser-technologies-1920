@@ -1,3 +1,19 @@
 body {
-    background-color: lightblue;
+    margin: 1em auto;
+}
+
+fieldset {
+    display: block;
+}
+
+form section section:nth-of-type(1) {
+    visibility: hidden;
+}
+
+button[type="button"] {
+    display: none;
+}
+
+button[formaction="/finish"] {
+    display: block;
 }
