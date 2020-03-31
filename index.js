@@ -36,8 +36,9 @@ function renderSave(req, res) {
 }
 
 function renderFinish(req, res) {
-    console.log(req.query)
-    res.render('finish')
+    res.render('finish', {
+        query: req.query
+    })
 }
 
 app.listen(port, function () {

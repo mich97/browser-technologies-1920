@@ -1,1 +1,22 @@
-Finished!
+<%- include('partials/head') %>
+<main>
+    <h1>Finished!</h1>
+    <p>You have just finished the survey with the following answers:</p>
+    <ul>
+        <li><strong>Name: </strong><%= `${query.fname} ${query.lname}` %></li>
+        <li><strong>Age: </strong><%= query.age %></li>
+        <li><strong>School: </strong><%= query.school %></li>
+        <li><strong>Course: </strong><%= query.course %></li>
+        <li>
+            <strong>Your are familiar with: </strong>
+            <ul>
+                <% query.lang.forEach(item => { %>
+                    <li><%= item %></li>
+                <% }) %>
+            </ul>
+        </li>
+        <li><strong>You prefer: </strong><%= query.framework %></li>
+    </ul>
+    <a href="/">Back to home</a>
+</main>
+<%- include('partials/footer') %>

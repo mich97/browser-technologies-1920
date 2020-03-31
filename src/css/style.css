@@ -45,6 +45,7 @@ label {
 
 label:hover {
     background: rgba(82, 0, 238, .1);
+    cursor: pointer;
 }
 
 #html:checked + label,
@@ -63,7 +64,6 @@ fieldset {
     display: none;
     border: 0;
     padding: 0;
-    min-height: 10em;
 }
 
 button {
@@ -75,6 +75,7 @@ button {
     cursor: pointer;
     border-radius: 5px;
     margin-left: 1em;
+    font-family: inherit;
 }
 
 button:hover, a:hover {
