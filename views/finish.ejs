@@ -10,9 +10,19 @@
         <li>
             <strong>Your are familiar with: </strong>
             <ul>
-                <% query.lang.forEach(item => { %>
-                    <li><%= item %></li>
-                <% }) %>
+                <% if (query.html) { %>
+                    <li><%= query.html %></li>
+                <% } %>
+                <% if (query.css) { %>
+                    <li><%= query.css %></li>
+                <% } %>
+                <% if (query.js) { %>
+                    <li><%= query.js %></li>
+                <% } %>
+                <% if (query.php) { %>
+                    <li><%= query.php %></li>
+                <% } %>
+
             </ul>
         </li>
         <li><strong>You prefer: </strong><%= query.framework %></li>
