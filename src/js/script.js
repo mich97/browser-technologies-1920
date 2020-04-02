@@ -43,9 +43,9 @@ function fixStepIndicator(n) {
 }
 
 document.getElementById("prevBtn").onclick = function () {
-    nextPrev(-1)
+    nextPrev(-1);
 };
 
 document.getElementById("nextBtn").onclick = function () {
-    nextPrev(1)
+    nextPrev(1);
 };

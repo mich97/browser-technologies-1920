@@ -1,7 +1,14 @@
 <%- include('partials/head') %>
 <main>
     <h1>Saved!</h1>
-    <p>Your progress has been saved. Use the following url to able to continue <strong><%= url %></strong></p>
-    <a href="/">Back to home</a>
+    <div id="withoutSupport">
+        <p>Your progress has been saved. Use the following url to able to continue <strong><%= url %></strong></p>
+    </div>
+    <div id="withSupport">
+        <p>Your progress has been saved. Click the button below to copy your URL.</p>
+        <input id="input" type="text" value="<%= url %>"/>
+        <button id="copy">Copy to clipboard</button>
+    </div>
 </main>
+<script src="/js/copy.js"></script>
 <%- include('partials/footer') %>
