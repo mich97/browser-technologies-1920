@@ -10,6 +10,7 @@ Ik wil een enquete kunnen invullen over de minor Web Development, met verschille
 - [Opdracht 1.2](./course/Opdracht1.2.md)
 - [Opdracht 2](./course/Opdracht2.md)
     - [Layers](./course/Layers.md)
+    - [Feature tests](./course/Featuretests.md)
 
 ## Installeren
 1. Clone repo
